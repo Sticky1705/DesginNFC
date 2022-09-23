@@ -1,2 +1,1 @@
-
-Hế nhô các bạn minh la wibu
+made by Sincollm

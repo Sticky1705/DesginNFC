@@ -25,7 +25,7 @@ const readFile = file => {
 const getBackgrounds = () => {
   const backgrounds = [
     "https://cdn.glitch.com/d08bb326-e251-4744-9266-f454d653c7c1%2F2.jpg?v=1624806671981",
-    "https://cdn.glitch.global/7fd9ed51-ce03-4446-9bf2-9c0ae95c3578/214c7508ace668b831f7.jpg?v=1663899369819"
+    "https://cdn.glitch.global/7fd9ed51-ce03-4446-9bf2-9c0ae95c3578/thesinhvien.jpg?v=1663923659567"
   ];
 
   return Promise.all(backgrounds.map(bg => toDataURL(bg)));
