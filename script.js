@@ -32,6 +32,7 @@ const getBackgrounds = () => {
 };
 
 const fonts = [
+  "Swiss 721",
   "Kanit",
   "Oswald",
   "Prompt",

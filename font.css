@@ -444,5 +444,11 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
-
+@font-face {
+  font-family: "Swiss 721"; 
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://db.onlinewebfonts.com/t/8979d21bff80c959d6dcba98d1e32bb8.woff) format("woff"); 
+}
 

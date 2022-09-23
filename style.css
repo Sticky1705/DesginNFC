@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/8979d21bff80c959d6dcba98d1e32bb8?family=Swiss+721);
+
 :root {
   --padding: 60px;
 }
@@ -48,9 +50,9 @@ h5 {
 #name {
   position: absolute;
   margin: 0;
-  top: 227px;
+  top: 232px;
   left: 555px;
-  font-family: "Kanit", sans-serif;
+  font-family: "Swiss 721", sans-serif;
   font-size: 50px;
   font-weight: 500;
   color: black;
@@ -59,7 +61,7 @@ h5 {
 #birthday {
   position: absolute;
   margin: 0;
-  top: 282px;
+  top: 283px;
   left: 555px;
   font-family: "Kanit", sans-serif;
   font-size: 50px;
@@ -70,7 +72,7 @@ h5 {
 #job {
   position: absolute;
   margin: 0;
-  top: 345px;
+  top: 346px;
   left: 555px;
   font-family: "Kanit", sans-serif;
   font-size: 50px;
@@ -81,7 +83,7 @@ h5 {
 #MSSV {
   position: absolute;
   margin: 0;
-  top: 407px;
+  top: 408px;
   left: 555px;
   font-family: "Kanit", sans-serif;
   font-size: 50px;
@@ -92,7 +94,7 @@ h5 {
 #Classroom {
   position: absolute;
   margin: 0;
-  top: 464px;
+  top: 465px;
   left: 555px;
   font-family: "Kanit", sans-serif;
   font-size: 50px;
@@ -103,7 +105,7 @@ h5 {
 #SchoolYear {
   position: absolute;
   margin: 0;
-  top: 523px;
+  top: 524px;
   left: 555px;
   font-family: "Kanit", sans-serif;
   font-size: 50px;
