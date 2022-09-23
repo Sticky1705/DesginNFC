@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://cdn.glitch.com/d08bb326-e251-4744-9266-f454d653c7c1%2Ffavicon.png?v=1624373448629"
+    />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/font.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tao the sinh vien truong Cao dang Vien Dong</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div
+        id="card"
+        v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+      >
+        <div id="overlay"></div>
+        <img
+          v-if="showLogo"
+          v-bind:src="logo"
+          v-bind:style="{ 'width': logoSize + 'px' }"
+          id="logo"
+        />
+
+        <p id="name">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="name-content"
+            >{{name}}</span>
+          <span class="hack">_</span>
+        </p>
+
+        <p id="birthday">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="birthday-content"
+            >{{birthday}}</span>
+          <span class="hack">_</span>
+        </p>
+
+        <p id="job">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="job-content"
+            >{{job}}</span>
+          <span class="hack">_</span>
+        </p>
+
+        <p id="MSSV">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="MSSV-content"
+            >{{url}}</span>
+          <span class="hack">_</span>
+        </p>
+
+        <div id="qr-code"></div>
+
+        <p id="Classroom">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="Classroom-content"
+            >{{Classroom}}</span>
+          <span class="hack">_</span>
+        </p>
+
+        <p id="SchoolYear">
+          <span
+            v-bind:style="{ 'font-family': font }"
+            id="SchoolYear-content"
+            >{{SchoolYear}}</span>
+          <span class="hack">_</span>
+        </p>
+      </div>
+
+      <div id="form-card">
+        <div>
+          <h5>1. Ảnh đại diện</h5>
+          <div>
+            <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+            <input type="file" @change="changeLogo" accept="image/*" />
+            <button v-on:click="showLogo = !showLogo">
+              Ẩn/Hiện anh dai dien
+            </button>
+            <button v-on:click="logoSize -= 10">
+              - Thu nhỏ
+            </button>
+            <button v-on:click="logoSize += 10">
+              + Phóng to
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <h5>3. Ảnh nền</h5>
+          <div id="background-select">
+            <img
+              v-bind:src="bg"
+              v-for="bg in backgrounds"
+              v-on:click="setBackground(bg)"
+            />
+          </div>
+          <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+          <input type="file" @change="changeCustomBg" accept="image/*" />
+        </div>
+
+        <div>
+          <h5>4. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+          <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
+          <select v-model="font">
+            <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+          </select>
+          <button v-on:click="fontSize -= 2">
+            - Thu nhỏ
+          </button>
+          <button v-on:click="fontSize += 2">
+            + Phóng to
+          </button>
+        </div>
+
+        <div>
+          <h5>5. Ngày tháng năm sinh</h5>
+          <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
+          <select v-model="font">
+            <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+          </select>
+          <button v-on:click="fontSize -= 2">
+            - Thu nhỏ
+          </button>
+          <button v-on:click="fontSize += 2">
+            + Phóng to
+          </button>
+        </div>
+
+        <div>
+          <h5>6. Ngành</h5>
+          <input v-model="job" placeholder="Ngành học" id="txt-job" />
+          <select v-model="font">
+            <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+          </select>
+          <button v-on:click="fontSize -= 2">
+            - Thu nhỏ
+          </button>
+          <button v-on:click="fontSize += 2">
+            + Phóng to
+          </button>
+        </div>
+
+        <div>
+          <h5>
+            7. MSSV
+          </h5>
+          <div>
+            <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
+            <input v-model="url" placeholder="MSSV" id="url"/>
+            <button v-on:click="updateQR(-10)">
+              - Thu nhỏ
+            </button>
+            <button v-on:click="updateQR(10)">
+              + Phóng to
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <h5>8. Lớp</h5>
+          <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
+          <select v-model="font">
+            <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+          </select>
+          <button v-on:click="fontSize -= 2">
+            - Thu nhỏ
+          </button>
+          <button v-on:click="fontSize += 2">
+            + Phóng to
+          </button>
+        </div>
+
+        <div>
+          <h5>9. Niên khóa</h5>
+          <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
+          <select v-model="font">
+            <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+          </select>
+          <button v-on:click="fontSize -= 2">
+            - Thu nhỏ
+          </button>
+          <button v-on:click="fontSize += 2">
+            + Phóng to
+          </button>
+        </div>
+
+        <div>
+          <h5>10. Xuất file</h5>
+          <button v-on:click="exportCard">
+            Tạo thẻ (Ảnh)
+          </button>
+          <button v-on:click="exportPDF">
+            Tạo thẻ (PDF)
+          </button>
+
+          <p>
+            Nếu xuất file ảnh, các bạn in màu với <b>độ phân giải 300dpi</b> sẽ
+            được ảnh <b>tầm 8.7cm x 5.5cm</b>. <br />
+            Nếu xuất file PDF thì đem đi màu A4, chọn <b>Fit to Paper</b> khi in
+            là ok. <br />
+            Dán ảnh này lên thẻ NFC trắng <b>(8.55cm X 5.4cm)</b> là được nhé!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
+      integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+      integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
