@@ -106,7 +106,7 @@
         </div>
 
         <div>
-          <h5>3. Ảnh nền</h5>
+          <h5>2. Ảnh nền</h5>
           <div id="background-select">
             <img
               v-bind:src="bg"
@@ -119,7 +119,7 @@
         </div>
 
         <div>
-          <h5>4. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+          <h5>3. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
           <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
           <select v-model="font">
             <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -133,7 +133,7 @@
         </div>
 
         <div>
-          <h5>5. Ngày tháng năm sinh</h5>
+          <h5>4. Ngày tháng năm sinh</h5>
           <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
           <select v-model="font">
             <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -147,7 +147,7 @@
         </div>
 
         <div>
-          <h5>6. Ngành</h5>
+          <h5>5. Ngành</h5>
           <input v-model="job" placeholder="Ngành học" id="txt-job" />
           <select v-model="font">
             <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -161,9 +161,7 @@
         </div>
 
         <div>
-          <h5>
-            7. MSSV
-          </h5>
+          <h5>6. MSSV</h5>
           <div>
             <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
             <input v-model="url" placeholder="MSSV" id="url"/>
@@ -177,7 +175,7 @@
         </div>
 
         <div>
-          <h5>8. Lớp</h5>
+          <h5>7. Lớp</h5>
           <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
           <select v-model="font">
             <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -191,7 +189,7 @@
         </div>
 
         <div>
-          <h5>9. Niên khóa</h5>
+          <h5>8. Niên khóa</h5>
           <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
           <select v-model="font">
             <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -205,7 +203,7 @@
         </div>
 
         <div>
-          <h5>10. Xuất file</h5>
+          <h5>9. Xuất file</h5>
           <button v-on:click="exportCard">
             Tạo thẻ (Ảnh)
           </button>
