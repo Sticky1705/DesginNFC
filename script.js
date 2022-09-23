@@ -49,11 +49,11 @@ const app = new Vue({
     showLogo: true,
     logo:
       "",
-    logoSize: 265,
+    logoSize: 266,
 
     url: "",
     qrCode: undefined,
-    qrSize: 185,
+    qrSize: 140,
 
     name: "",
     fontSize: 85,
