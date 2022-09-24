@@ -14,8 +14,8 @@ h5 {
 }
 
 #card {
-  width: 1100px;
-  height: 700px;
+  width: 500px;
+  height: 300px;
   position: relative;
   background-size: cover;
 }
@@ -34,82 +34,82 @@ h5 {
 #logo {
   position: absolute;
   margin: 0;
-  top: 239px;
-  left: 18px;
-  height: 354px;
+  top: 105px;
+  left: 8px;
+  height: 160px;
 }
 
 #qr-code {
   position: absolute;
   right: 7px;
-  top: 393px;
-  height: 182px;
+  top: 190px;
+  height: 60px;
   border: 10px solid white;
 }
 
 #name {
   position: absolute;
   margin: 0;
-  top: 232px;
-  left: 555px;
+  top: 105px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
 #birthday {
   position: absolute;
   margin: 0;
-  top: 288px;
-  left: 555px;
+  top: 130px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
 #job {
   position: absolute;
   margin: 0;
-  top: 350px;
-  left: 555px;
+  top: 158px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
 #MSSV {
   position: absolute;
   margin: 0;
-  top: 413px;
-  left: 555px;
+  top: 185px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
 #Classroom {
   position: absolute;
   margin: 0;
-  top: 468px;
-  left: 555px;
+  top: 212px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
 #SchoolYear {
   position: absolute;
   margin: 0;
-  top: 528px;
-  left: 555px;
+  top: 237px;
+  left: 250px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   color: black;
 }
 
@@ -118,7 +118,7 @@ h5 {
 }
 
 #form-card {
-  margin: 20px 0;
+
 }
 
 #background-select {
@@ -139,4 +139,12 @@ h5 {
 #background-select img:hover {
   opacity: 1;
   cursor: pointer;
+}
+.content-left{
+  float: left;
+  
+}
+.content-right{
+  float: right;
+  width: 50%;
 }
