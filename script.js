@@ -51,7 +51,7 @@ const app = new Vue({
     logoSize: 120,
     url: "",
     qrCode: undefined,
-    qrSize: 60,
+    qrSize: 76,
     name: "",
     fontSize: 85,
     fonts: fonts,
