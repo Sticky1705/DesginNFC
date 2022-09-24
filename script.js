@@ -24,7 +24,7 @@ const readFile = file => {
 
 const getBackgrounds = () => {
   const backgrounds = [
-    "https://cdn.glitch.global/7fd9ed51-ce03-4446-9bf2-9c0ae95c3578/thesinhvien.jpg?v=1663923659567"
+    "/Image/Artboard1.png"
   ];
 
   return Promise.all(backgrounds.map(bg => toDataURL(bg)));
@@ -49,11 +49,9 @@ const app = new Vue({
     logo:
       "",
     logoSize: 120,
-
     url: "",
     qrCode: undefined,
     qrSize: 60,
-
     name: "",
     fontSize: 85,
     fonts: fonts,
