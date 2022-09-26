@@ -13,7 +13,7 @@
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="https://cdn.glitch.com/d08bb326-e251-4744-9266-f454d653c7c1%2Ffavicon.png?v=1624373448629"
+      href="https://cdn.glitch.global/7fd9ed51-ce03-4446-9bf2-9c0ae95c3578/download.png?v=1664001683462"
     />
 
     <!-- Import the webpage's stylesheet -->
@@ -25,10 +25,7 @@
   <body>
     <div id="app">
       <div class="content-left">
-        <div
-          id="card"
-          v-bind:style="{ 'background-image': 'url(' + background + ')' }"
-        >
+        <div id="card" v-bind:style="{ 'background-image': 'url(' + background + ')' }">
           <div id="overlay"></div>
           <img
             v-if="showLogo"
@@ -122,7 +119,7 @@
           </div> -->
   
           <div>
-            <h5>3. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+            <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
             <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
             <select v-model="font">
               <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -136,7 +133,7 @@
           </div>
   
           <div>
-            <h5>4. Ngày tháng năm sinh</h5>
+            <h5>3. Ngày tháng năm sinh</h5>
             <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
             <select v-model="font">
               <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -150,7 +147,7 @@
           </div>
   
           <div>
-            <h5>5. Ngành</h5>
+            <h5>4. Ngành</h5>
             <input v-model="job" placeholder="Ngành học" id="txt-job" />
             <select v-model="font">
               <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -164,7 +161,7 @@
           </div>
   
           <div>
-            <h5>6. MSSV</h5>
+            <h5>5. MSSV</h5>
             <div>
               <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
               <input v-model="url" placeholder="MSSV" id="url"/>
@@ -178,7 +175,7 @@
           </div>
   
           <div>
-            <h5>7. Lớp</h5>
+            <h5>6. Lớp</h5>
             <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
             <select v-model="font">
               <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -192,7 +189,7 @@
           </div>
   
           <div>
-            <h5>8. Niên khóa</h5>
+            <h5>7. Niên khóa</h5>
             <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
             <select v-model="font">
               <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
@@ -206,7 +203,7 @@
           </div>
   
           <div>
-            <h5>9. Xuất file</h5>
+            <h5>8. Xuất file</h5>
             <button v-on:click="exportCard">
               Tạo thẻ (Ảnh)
             </button>

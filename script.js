@@ -134,9 +134,9 @@ const app = new Vue({
       await domtoimage.toPng(document.querySelector("#card")); // Lol font only work in 2nd times
       const dataUrl = await domtoimage.toPng(document.querySelector("#card"));
 
-      const img = new Image();
-      img.src = dataUrl;
-      document.body.appendChild(img);
+      // const img = new Image();
+      // img.src = dataUrl;
+      // document.body.appendChild(img);
 
       const link = document.createElement("a");
       link.download = document.getElementById('url').value+".png";
