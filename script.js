@@ -52,6 +52,7 @@ const app = new Vue({
     url: "",
     qrCode: undefined,
     qrSize: 76,
+    
     name: "",
     fontSize: 85,
     fonts: fonts,
