@@ -20,8 +20,141 @@ h5 {
   background-size: cover;
 }
 
+#card_1 {
+  bottom: -300px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_2 {
+  bottom: -590px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_3 {
+  bottom: -900px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_4 {
+  bottom: -1190px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_5 {
+  bottom: -1000px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_6 {
+  bottom: -1000px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+#card_7 {
+  bottom: -1000px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
 #overlay {
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_1 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_2 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_3 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_4 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_5 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_6 {
+  top: 1000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#overlay_7 {
+  top: 1000px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -39,6 +172,62 @@ h5 {
   height: 161px;
 }
 
+#logo_1 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_2 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_3 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_4 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_5 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_6 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
+#logo_7 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 8px;
+  height: 161px;
+}
+
 #qr-code {
   position: absolute;
   right: 9px;
@@ -47,7 +236,140 @@ h5 {
   border: 5px solid white;
 }
 
+#qr-code_1 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_2 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_3 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_4 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_5 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_6 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
+#qr-code_7 {
+  position: absolute;
+  right: 9px;
+  top: 185px;
+  height: 75px;
+  border: 5px solid white;
+}
+
 #name {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_1 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_2 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_3 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_4 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_5 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_6 {
+  position: absolute;
+  margin: 0;
+  top: 105px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#name_7 {
   position: absolute;
   margin: 0;
   top: 105px;
@@ -69,7 +391,161 @@ h5 {
   color: black;
 }
 
+#birthday_1 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_2 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_3 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_4 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_5 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_6 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#birthday_7 {
+  position: absolute;
+  margin: 0;
+  top: 130px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
 #job {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_1 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_2 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_3 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_4 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_5 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_6 {
+  position: absolute;
+  margin: 0;
+  top: 158px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#job_7 {
   position: absolute;
   margin: 0;
   top: 158px;
@@ -91,6 +567,83 @@ h5 {
   color: black;
 }
 
+#MSSV_1 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_2 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_3 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_4 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_5 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_6 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#MSSV_7 {
+  position: absolute;
+  margin: 0;
+  top: 185px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
 #Classroom {
   position: absolute;
   margin: 0;
@@ -102,7 +655,161 @@ h5 {
   color: black;
 }
 
+#Classroom_1 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_2 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_3 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_4 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_5 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_6 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#Classroom_7 {
+  position: absolute;
+  margin: 0;
+  top: 212px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
 #SchoolYear {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_1 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_2 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_3 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_4 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_5 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_6 {
+  position: absolute;
+  margin: 0;
+  top: 237px;
+  left: 250px;
+  font-family: "Swiss 721", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+#SchoolYear_7 {
   position: absolute;
   margin: 0;
   top: 237px;

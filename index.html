@@ -24,414 +24,1550 @@
   </head>
 
   <body>
-    <div id="app">
-      <div class="content-left">
-        <div
-          id="card"
-          v-bind:style="{ 'background-image': 'url(' + background + ')' }"
-          >
+    <br>
+      <div id="app">
+        <div class="content-left">
+          <div
+            id="card"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
 
-          <div id="overlay"></div>
-          <img
-            v-if="showLogo"
-            v-bind:src="logo"
-            v-bind:style="{ 'width': logoSize + 'px' }"
-            id="logo"
-          />
+            <div id="overlay"></div>
+            <img
+              v-if="showLogo"
+              v-bind:src="logo"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo"
+            />
 
-          <p id="name">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="name-content"
-              >{{name}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="name">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name}}</span>
+              <span class="hack">_</span>
+            </p>
 
-          <p id="birthday">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="birthday-content"
-              >{{birthday}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="birthday">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday}}</span>
+              <span class="hack">_</span>
+            </p>
 
-          <p id="job">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="job-content"
-              >{{job}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="job">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job}}</span>
+              <span class="hack">_</span>
+            </p>
 
-          <p id="MSSV">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="MSSV-content"
-              >{{url}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="MSSV">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url}}</span>
+              <span class="hack">_</span>
+            </p>
 
-          <div id="qr-code"></div>
+            <div id="qr-code"></div>
 
-          <p id="Classroom">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="Classroom-content"
-              >{{Classroom}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="Classroom">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom}}</span>
+              <span class="hack">_</span>
+            </p>
 
-          <p id="SchoolYear">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="SchoolYear-content"
-              >{{SchoolYear}}</span>
-            <span class="hack">_</span>
-          </p>
+            <p id="SchoolYear">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+          <div
+            id="card_1"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            
+            <div id="overlay_1"></div>
+            <img
+              v-if="showLogo_1"
+              v-bind:src="logo_1"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_1"
+            />
+
+            <p id="name_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_1}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_1}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_1}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_1}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_1"></div>
+
+            <p id="Classroom_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_1}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_1">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_1}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+          <div
+            id="card_2"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            <div id="overlay_2"></div>
+            <img
+              v-if="showLogo_2"
+              v-bind:src="logo_2"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_2"
+            />
+
+            <p id="name_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_2}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_2}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_2}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_2}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_2"></div>
+
+            <p id="Classroom_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_2}}</span>
+              <span class="hack">_</span>
+            </p>
+            
+            <p id="SchoolYear_2">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_2}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
+          <div
+            id="card_3"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            <div id="overlay_3"></div>
+            <img
+              v-if="showLogo_3"
+              v-bind:src="logo_3"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_3"
+            />
+
+            <p id="name_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_3}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_3}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_3}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_3}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_3"></div>
+
+            <p id="Classroom_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_3}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_3">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_3}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
+          <div
+            id="card_4"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            <div id="overlay_4"></div>
+            <img
+              v-if="showLogo_4"
+              v-bind:src="logo_4"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_4"
+            />
+
+            <p id="name_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_4}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_4}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_4}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_4}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_4"></div>
+
+            <p id="Classroom_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_4}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_4">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_4}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
+          <div
+            id="card_5"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            <div id="overlay_5"></div>
+            <img
+              v-if="showLogo_5"
+              v-bind:src="logo_5"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_5"
+            />
+
+            <p id="name_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_5}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_5}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_5}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_5}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_5"></div>
+
+            <p id="Classroom_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_5}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_5">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_5}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
+          <div
+            id="card_6"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            
+            <div id="overlay_6"></div>
+            <img
+              v-if="showLogo_6"
+              v-bind:src="logo_6"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_6"
+            />
+
+            <p id="name_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_6}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_6}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_6}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_6}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_6"></div>
+
+            <p id="Classroom_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_6}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_6">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_6}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
+          <div
+            id="card_7"
+            v-bind:style="{ 'background-image': 'url(' + background + ')' }"
+            >
+            <div id="overlay_7"></div>
+            <img
+              v-if="showLogo_7"
+              v-bind:src="logo_7"
+              v-bind:style="{ 'width': logoSize + 'px' }"
+              id="logo_7"
+            />
+
+            <p id="name_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="name-content"
+                >{{name_7}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="birthday_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="birthday-content"
+                >{{birthday_7}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="job_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="job-content"
+                >{{job_7}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="MSSV_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="MSSV-content"
+                >{{url_7}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <div id="qr-code_7"></div>
+
+            <p id="Classroom_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="Classroom-content"
+                >{{Classroom_7}}</span>
+              <span class="hack">_</span>
+            </p>
+
+            <p id="SchoolYear_7">
+              <span
+                v-bind:style="{ 'font-family': font }"
+                id="SchoolYear-content"
+                >{{SchoolYear_7}}</span>
+              <span class="hack">_</span>
+            </p>
+          </div>
+
         </div>
+        
+        <div class="content-right">
+          <div id="form-card">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo" accept="image/*" />
+                <button v-on:click="showLogo = !showLogo">
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
+              <select v-model="font" hidden>
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
+              <select v-model="font" hidden>
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job" placeholder="Ngành học" id="txt-job" />
+              <select v-model="font" hidden>
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
+                <input v-model="url" placeholder="MSSV" id="url"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
+              <select v-model="font" hidden>
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
 
-        <div
-          id="card"
-          v-bind:style="{ 'background-image': 'url(' + background + ')' }"
-          >
-          <div id="overlay"></div>
-          <img
-            v-if="showLogo"
-            v-bind:src="logo"
-            v-bind:style="{ 'width': logoSize + 'px' }"
-            id="logo"
-          />
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="name">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="name-content"
-              >{{name}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_1">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_1" accept="image/*" />
+                <button v-on:click="showLogo_1 = !showLogo_1" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_1" placeholder="Tên trên thẻ" id="txt-name_1" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_1" placeholder="ngày tháng năm sinh" id="txt-birthday_1" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_1" placeholder="Ngành học" id="txt-job_1" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_1" placeholder="MSSV" id="txt-MSSV_1" hidden>
+                <input v-model="url_1" placeholder="MSSV" id="url_1"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_1" placeholder="Lớp" id="txt-Classroom_1" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_1" placeholder="Niên khóa" id="txt-SchoolYear_1" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="birthday">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="birthday-content"
-              >{{birthday}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_2">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_2" accept="image/*" />
+                <button v-on:click="showLogo_2 = !showLogo_2" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_2" placeholder="Tên trên thẻ" id="txt-name_2" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_2" placeholder="ngày tháng năm sinh" id="txt-birthday_2" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_2" placeholder="Ngành học" id="txt-job_2" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_2" placeholder="MSSV" id="txt-MSSV_2" hidden>
+                <input v-model="url_2" placeholder="MSSV" id="url_2"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_2" placeholder="Lớp" id="txt-Classroom_2" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_2" placeholder="Niên khóa" id="txt-SchoolYear_2" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="job">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="job-content"
-              >{{job}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_3">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_3" accept="image/*" />
+                <button v-on:click="showLogo_3 = !showLogo_3" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_3" placeholder="Tên trên thẻ" id="txt-name_3" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_3" placeholder="ngày tháng năm sinh" id="txt-birthday_3" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_3" placeholder="Ngành học" id="txt-job_3" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_3" placeholder="MSSV" id="txt-MSSV_3" hidden>
+                <input v-model="url_3" placeholder="MSSV" id="url_3"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_3" placeholder="Lớp" id="txt-Classroom_3" />
+              <select v-model="font" hidden>
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_3" placeholder="Niên khóa" id="txt-SchoolYear_3" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="MSSV">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="MSSV-content"
-              >{{url}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_4">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_4" accept="image/*" />
+                <button v-on:click="showLogo_4 = !showLogo_4" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_4" placeholder="Tên trên thẻ" id="txt-name_4" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_4" placeholder="ngày tháng năm sinh" id="txt-birthday_4" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_4" placeholder="Ngành học" id="txt-job_4" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_4" placeholder="MSSV" id="txt-MSSV_4" hidden>
+                <input v-model="url_4" placeholder="MSSV" id="url_4"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_4" placeholder="Lớp" id="txt-Classroom_4" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_4" placeholder="Niên khóa" id="txt-SchoolYear_4" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <div id="qr-code"></div>
+          <div id="form-card_5">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_5" accept="image/*" />
+                <button v-on:click="showLogo_5 = !showLogo_5" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_5" placeholder="Tên trên thẻ" id="txt-name_5" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_5" placeholder="ngày tháng năm sinh" id="txt-birthday_5" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_5" placeholder="Ngành học" id="txt-job_5" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_5" placeholder="MSSV" id="txt-MSSV_5" hidden>
+                <input v-model="url_5" placeholder="MSSV" id="url_5"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_5" placeholder="Lớp" id="txt-Classroom_5" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_5" placeholder="Niên khóa" id="txt-SchoolYear_5" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="Classroom">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="Classroom-content"
-              >{{Classroom}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_6">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_6" accept="image/*" />
+                <button v-on:click="showLogo_6 = !showLogo_6" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_6" placeholder="Tên trên thẻ" id="txt-name_6" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_6" placeholder="ngày tháng năm sinh" id="txt-birthday_6" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_6" placeholder="Ngành học" id="txt-job_6" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_6" placeholder="MSSV" id="txt-MSSV_6" hidden>
+                <input v-model="url_6" placeholder="MSSV" id="url_6"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_6" placeholder="Lớp" id="txt-Classroom_6" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_6" placeholder="Niên khóa" id="txt-SchoolYear_6" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
 
-          <p id="SchoolYear">
-            <span
-              v-bind:style="{ 'font-family': font }"
-              id="SchoolYear-content"
-              >{{SchoolYear}}</span>
-            <span class="hack">_</span>
-          </p>
+          <div id="form-card_7">
+            <div>
+              <h5>1. Ảnh đại diện</h5>
+              <div>
+                <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
+                <input type="file" @change="changeLogo_7" accept="image/*" />
+                <button v-on:click="showLogo_7 = !showLogo_7" >
+                  Ẩn/Hiện anh dai dien
+                </button>
+                <button v-on:click="logoSize -= 10" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="logoSize += 10" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <!-- <div>
+              <h5>2. Ảnh nền</h5>
+              <div id="background-select">
+                <img
+                  v-bind:src="bg"
+                  v-for="bg in backgrounds"
+                  v-on:click="setBackground(bg)"
+                />
+              </div>
+              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
+              <input type="file" @change="changeCustomBg" accept="image/*" />
+            </div> -->
+    
+            <div>
+              <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
+              <input v-model="name_7" placeholder="Tên trên thẻ" id="txt-name_7" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>3. Ngày tháng năm sinh</h5>
+              <input v-model="birthday_7" placeholder="ngày tháng năm sinh" id="txt-birthday_7" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>4. Ngành</h5>
+              <input v-model="job_7" placeholder="Ngành học" id="txt-job_7" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>5. MSSV</h5>
+              <div>
+                <input v-model="MSSV_7" placeholder="MSSV" id="txt-MSSV_7" hidden>
+                <input v-model="url_7" placeholder="MSSV" id="url_7"/>
+                <button v-on:click="updateQR(-10)" hidden>
+                  - Thu nhỏ
+                </button>
+                <button v-on:click="updateQR(10)" hidden>
+                  + Phóng to
+                </button>
+              </div>
+            </div>
+    
+            <div>
+              <h5>6. Lớp</h5>
+              <input v-model="Classroom_7" placeholder="Lớp" id="txt-Classroom_7" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>7. Niên khóa</h5>
+              <input v-model="SchoolYear_7" placeholder="Niên khóa" id="txt-SchoolYear_7" />
+              <select v-model="font">
+                <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
+              </select>
+              <button v-on:click="fontSize -= 2" hidden>
+                - Thu nhỏ
+              </button>
+              <button v-on:click="fontSize += 2" hidden>
+                + Phóng to
+              </button>
+            </div>
+    
+            <div>
+              <h5>8. Xuất file</h5>
+              <button v-on:click="exportCard" hidden>
+                Tạo thẻ (Ảnh)
+              </button>
+              <button v-on:click="exportPDF">
+                Tạo thẻ (PDF)
+              </button>
+            </div>
+          </div>
+
         </div>
-
+        
       </div>
-      
-      <div class="content-right">
-        <div id="form-card">
-          <div>
-            <h5>1. Ảnh đại diện</h5>
-            <div>
-              <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
-              <input type="file" @change="changeLogo" accept="image/*" />
-              <button v-on:click="showLogo = !showLogo" >
-                Ẩn/Hiện anh dai dien
-              </button>
-              <button v-on:click="logoSize -= 10" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="logoSize += 10" hidden>
-                + Phóng to
-              </button>
-            </div>
-          </div>
-  
-          <!-- <div>
-            <h5>2. Ảnh nền</h5>
-            <div id="background-select">
-              <img
-                v-bind:src="bg"
-                v-for="bg in backgrounds"
-                v-on:click="setBackground(bg)"
-              />
-            </div>
-            <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-            <input type="file" @change="changeCustomBg" accept="image/*" />
-          </div> -->
-  
-          <div>
-            <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
-            <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>3. Ngày tháng năm sinh</h5>
-            <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>4. Ngành</h5>
-            <input v-model="job" placeholder="Ngành học" id="txt-job" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>5. MSSV</h5>
-            <div>
-              <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
-              <input v-model="url" placeholder="MSSV" id="url"/>
-              <button v-on:click="updateQR(-10)" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="updateQR(10)" hidden>
-                + Phóng to
-              </button>
-            </div>
-          </div>
-  
-          <div>
-            <h5>6. Lớp</h5>
-            <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>7. Niên khóa</h5>
-            <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>9. Xuất file</h5>
-            <button v-on:click="exportCard" hidden>
 
-              Tạo thẻ (Ảnh)
-            </button>
-            <button v-on:click="exportPDF">
-              Tạo thẻ (PDF)
-            </button>
-          </div>
-        </div>
-
-        <div id="form-card">
-          <div>
-            <h5>1. Ảnh đại diện</h5>
-            <div>
-              <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
-              <input type="file" @change="changeLogo" accept="image/*" />
-              <button v-on:click="showLogo = !showLogo" >
-                Ẩn/Hiện anh dai dien
-              </button>
-              <button v-on:click="logoSize -= 10" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="logoSize += 10" hidden>
-                + Phóng to
-              </button>
-            </div>
-          </div>
-  
-          <!-- <div>
-            <h5>2. Ảnh nền</h5>
-            <div id="background-select">
-              <img
-                v-bind:src="bg"
-                v-for="bg in backgrounds"
-                v-on:click="setBackground(bg)"
-              />
-            </div>
-            <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-            <input type="file" @change="changeCustomBg" accept="image/*" />
-          </div> -->
-  
-          <div>
-            <h5>3. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
-            <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>4. Ngày tháng năm sinh</h5>
-            <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>5. Ngành</h5>
-            <input v-model="job" placeholder="Ngành học" id="txt-job" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>6. MSSV</h5>
-            <div>
-              <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
-              <input v-model="url" placeholder="MSSV" id="url"/>
-              <button v-on:click="updateQR(-10)" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="updateQR(10)" hidden>
-                + Phóng to
-              </button>
-            </div>
-          </div>
-  
-          <div>
-            <h5>7. Lớp</h5>
-            <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>8. Niên khóa</h5>
-            <input v-model="SchoolYear" placeholder="Niên khóa" id="txt-SchoolYear" />
-            <select v-model="font" hidden>
-              <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
-            </select>
-            <button v-on:click="fontSize -= 2" hidden>
-              - Thu nhỏ
-            </button>
-            <button v-on:click="fontSize += 2" hidden>
-              + Phóng to
-            </button>
-          </div>
-  
-          <div>
-            <h5>9. Xuất file</h5>
-            <button v-on:click="exportCard" hidden>
-              Tạo thẻ (Ảnh)
-            </button>
-            <button v-on:click="exportPDF">
-              Tạo thẻ (PDF)
-            </button>
-          </div>
-        </div>
-
-      </div>
-      
-    </div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
-      integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
-      integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
-      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="/script.js" defer></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
+        integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+        integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script src="/script.js" defer></script>
+    </br>
   </body>
 </html>
