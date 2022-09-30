@@ -571,21 +571,21 @@ const app = new Vue({
       const RATIO = 1.02;
       const WIDTH = 85.5 * RATIO;
       const HEIGHT = 54 * RATIO;
-      doc.addImage(img, "JPEG", 15, 0, WIDTH, HEIGHT);
+      doc.addImage(img, "JPEG", 15, 20, WIDTH, HEIGHT);
 
       doc.addImage(img_1, "JPEG", 15, 85, WIDTH, HEIGHT);
 
-      doc.addImage(img_2, "JPEG", 15, 190, WIDTH, HEIGHT);
+      doc.addImage(img_2, "JPEG", 15, 150, WIDTH, HEIGHT);
 
-      doc.addImage(img_3, "JPEG", 15, 290, WIDTH, HEIGHT);
+      doc.addImage(img_3, "JPEG", 15, 215, WIDTH, HEIGHT);
 
-      doc.addImage(img_4, "JPEG", 110, 0, WIDTH, HEIGHT);
+      doc.addImage(img_4, "JPEG", 110, 20, WIDTH, HEIGHT);
 
       doc.addImage(img_5, "JPEG", 110, 85, WIDTH, HEIGHT);
 
-      doc.addImage(img_6, "JPEG", 110, 190, WIDTH, HEIGHT);
+      doc.addImage(img_6, "JPEG", 110, 150, WIDTH, HEIGHT);
 
-      doc.addImage(img_7, "JPEG", 110, 290, WIDTH, HEIGHT);
+      doc.addImage(img_7, "JPEG", 110, 215, WIDTH, HEIGHT);
       
       doc.setFontSize(16);
       doc.setFont("courier", "bold");
