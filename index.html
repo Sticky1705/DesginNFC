@@ -94,7 +94,7 @@
             id="card_1"
             v-bind:style="{ 'background-image': 'url(' + background + ')' }"
             >
-            
+
             <div id="overlay_1"></div>
             <img
               v-if="showLogo_1"
@@ -569,7 +569,7 @@
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
               <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
-              <select v-model="font" hidden>
+              <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
               <button v-on:click="fontSize -= 2" hidden>
@@ -583,7 +583,7 @@
             <div>
               <h5>3. Ngày tháng năm sinh</h5>
               <input v-model="birthday" placeholder="ngày tháng năm sinh" id="txt-birthday" />
-              <select v-model="font" hidden>
+              <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
               <button v-on:click="fontSize -= 2" hidden>
@@ -597,7 +597,7 @@
             <div>
               <h5>4. Ngành</h5>
               <input v-model="job" placeholder="Ngành học" id="txt-job" />
-              <select v-model="font" hidden>
+              <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
               <button v-on:click="fontSize -= 2" hidden>
@@ -625,7 +625,7 @@
             <div>
               <h5>6. Lớp</h5>
               <input v-model="Classroom" placeholder="Lớp" id="txt-Classroom" />
-              <select v-model="font" hidden>
+              <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
               <button v-on:click="fontSize -= 2" hidden>
@@ -656,7 +656,7 @@
 
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -664,6 +664,7 @@
 
           <div id="form-card_1">
             <div>
+              <div class="line-1"></div>
               <h5>1. Ảnh đại diện</h5>
               <div>
                 <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
@@ -782,7 +783,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -908,7 +909,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1034,7 +1035,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1160,7 +1161,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1286,7 +1287,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1412,7 +1413,7 @@
               <button v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button v-on:click="exportPDF" hidden>
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1535,7 +1536,7 @@
     
             <div>
               <h5>8. Xuất file</h5>
-              <button v-on:click="exportCard" hidden>
+              <button v-on:click="exportCard">
                 Tạo thẻ (Ảnh)
               </button>
               <button v-on:click="exportPDF">

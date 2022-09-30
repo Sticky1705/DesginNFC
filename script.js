@@ -522,26 +522,75 @@ const app = new Vue({
       await domtoimage.toPng(document.querySelector("#card")); // Lol font only work in 2nd times
       const dataUrl = await domtoimage.toPng(document.querySelector("#card"));
 
+      await domtoimage.toPng(document.querySelector("#card_1"));
+      const dataUrl_1 = await domtoimage.toPng(document.querySelector("#card_1"));
+
+      await domtoimage.toPng(document.querySelector("#card_2"));
+      const dataUrl_2 = await domtoimage.toPng(document.querySelector("#card_2"));
+
+      await domtoimage.toPng(document.querySelector("#card_3"));
+      const dataUrl_3 = await domtoimage.toPng(document.querySelector("#card_3"));
+
+      await domtoimage.toPng(document.querySelector("#card_4"));
+      const dataUrl_4 = await domtoimage.toPng(document.querySelector("#card_4"));
+
+      await domtoimage.toPng(document.querySelector("#card_5"));
+      const dataUrl_5 = await domtoimage.toPng(document.querySelector("#card_5"));
+
+      await domtoimage.toPng(document.querySelector("#card_6"));
+      const dataUrl_6 = await domtoimage.toPng(document.querySelector("#card_6"));
+
+      await domtoimage.toPng(document.querySelector("#card_7"));
+      const dataUrl_7 = await domtoimage.toPng(document.querySelector("#card_7"));
+
       const img = new Image();
       img.src = dataUrl;
+
+      const img_1 = new Image();
+      img_1.src = dataUrl_1;
+
+      const img_2 = new Image();
+      img_2.src = dataUrl_2;
+
+      const img_3 = new Image();
+      img_3.src = dataUrl_3;
+
+      const img_4 = new Image();
+      img_4.src = dataUrl_4;
+
+      const img_5 = new Image();
+      img_5.src = dataUrl_5;
+
+      const img_6 = new Image();
+      img_6.src = dataUrl_6;
+
+      const img_7 = new Image();
+      img_7.src = dataUrl_7;
 
       const doc = new jsPDF();
       const RATIO = 1.02;
       const WIDTH = 85.5 * RATIO;
       const HEIGHT = 54 * RATIO;
-      doc.addImage(img, "JPEG", 15, 15, WIDTH, HEIGHT);
       doc.addImage(img, "JPEG", 15, 90, WIDTH, HEIGHT);
 
+      doc.addImage(img_1, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_2, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_3, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_4, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_5, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_6, "JPEG", 15, 90, WIDTH, HEIGHT);
+
+      doc.addImage(img_7, "JPEG", 15, 90, WIDTH, HEIGHT);
+      
       doc.setFontSize(16);
       doc.setFont("courier", "bold");
-      doc.text(`Chon "Fit to Paper" khi in nhe :3.`, 15, 160);
 
-      doc.setLineWidth(3);
-      doc.line(0, 0, 210, 0);
-      doc.line(0, 0, 0, 297);
-      doc.line(210, 0, 210, 297);
-      doc.line(0, 297, 210, 297);
-      doc.save( document.getElementById('url').value+".pdf");
+      doc.save(document.getElementById('url').value+".pdf");
     },
     setBackground: function(bg) {
       this.background = bg;
