@@ -15,63 +15,64 @@ h5 {
 
 #card {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_1 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_2 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_3 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_4 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_5 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_6 {
   margin-bottom: 280px;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
 
 #card_7 {
-  width: 500px;
-  height: 300px;
+  margin-bottom: 280px;
+  width: 600px;
+  height: 370px;
   position: relative;
   background-size: cover;
 }
@@ -166,139 +167,139 @@ h5 {
 
 #logo {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_1 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_2 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_3 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_4 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_5 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #logo_6 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 129px;
+  left: 10px;
+  height: 190px;
 }
 
 #logo_7 {
   position: absolute;
-  margin: 0;
-  top: 105px;
-  left: 8px;
-  height: 161px;
+  top: 128px;
+  left: 10px;
+  height: 191px;
 }
 
 #qr-code {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_1 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_2 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_3 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_4 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_5 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_6 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #qr-code_7 {
   position: absolute;
-  right: 9px;
-  top: 185px;
-  height: 75px;
-  border: 5px solid white;
+  right: 10px;
+  top: 221px;
+  height: 101px;
+  width: 102px;
+  border: 1px solid white;
 }
 
 #name {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -306,10 +307,10 @@ h5 {
 #name_1 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -317,10 +318,10 @@ h5 {
 #name_2 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -328,10 +329,10 @@ h5 {
 #name_3 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -339,10 +340,10 @@ h5 {
 #name_4 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -350,10 +351,10 @@ h5 {
 #name_5 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -361,10 +362,10 @@ h5 {
 #name_6 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -372,10 +373,10 @@ h5 {
 #name_7 {
   position: absolute;
   margin: 0;
-  top: 105px;
-  left: 250px;
+  top: 125px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -383,10 +384,10 @@ h5 {
 #birthday {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -394,10 +395,10 @@ h5 {
 #birthday_1 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -405,10 +406,10 @@ h5 {
 #birthday_2 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -416,10 +417,10 @@ h5 {
 #birthday_3 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -427,10 +428,10 @@ h5 {
 #birthday_4 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -438,10 +439,10 @@ h5 {
 #birthday_5 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -449,10 +450,10 @@ h5 {
 #birthday_6 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -460,10 +461,10 @@ h5 {
 #birthday_7 {
   position: absolute;
   margin: 0;
-  top: 130px;
-  left: 250px;
+  top: 154px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -471,10 +472,10 @@ h5 {
 #job {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -482,10 +483,10 @@ h5 {
 #job_1 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -493,10 +494,10 @@ h5 {
 #job_2 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -504,10 +505,10 @@ h5 {
 #job_3 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -515,10 +516,10 @@ h5 {
 #job_4 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -526,10 +527,10 @@ h5 {
 #job_5 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -537,10 +538,10 @@ h5 {
 #job_6 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -548,10 +549,10 @@ h5 {
 #job_7 {
   position: absolute;
   margin: 0;
-  top: 158px;
-  left: 250px;
+  top: 189px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -559,10 +560,10 @@ h5 {
 #MSSV {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -570,10 +571,10 @@ h5 {
 #MSSV_1 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -581,10 +582,10 @@ h5 {
 #MSSV_2 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -592,10 +593,10 @@ h5 {
 #MSSV_3 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -603,10 +604,10 @@ h5 {
 #MSSV_4 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -614,10 +615,10 @@ h5 {
 #MSSV_5 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -625,10 +626,10 @@ h5 {
 #MSSV_6 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -636,10 +637,10 @@ h5 {
 #MSSV_7 {
   position: absolute;
   margin: 0;
-  top: 185px;
-  left: 250px;
+  top: 221px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -647,10 +648,10 @@ h5 {
 #Classroom {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -658,10 +659,10 @@ h5 {
 #Classroom_1 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -669,10 +670,10 @@ h5 {
 #Classroom_2 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -680,10 +681,10 @@ h5 {
 #Classroom_3 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -691,10 +692,10 @@ h5 {
 #Classroom_4 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -702,10 +703,10 @@ h5 {
 #Classroom_5 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -713,10 +714,10 @@ h5 {
 #Classroom_6 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -724,10 +725,10 @@ h5 {
 #Classroom_7 {
   position: absolute;
   margin: 0;
-  top: 212px;
-  left: 250px;
+  top: 252px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -735,10 +736,10 @@ h5 {
 #SchoolYear {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -746,10 +747,10 @@ h5 {
 #SchoolYear_1 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -757,10 +758,10 @@ h5 {
 #SchoolYear_2 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -768,10 +769,10 @@ h5 {
 #SchoolYear_3 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -779,10 +780,10 @@ h5 {
 #SchoolYear_4 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -790,10 +791,10 @@ h5 {
 #SchoolYear_5 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -801,10 +802,10 @@ h5 {
 #SchoolYear_6 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -812,10 +813,10 @@ h5 {
 #SchoolYear_7 {
   position: absolute;
   margin: 0;
-  top: 237px;
-  left: 250px;
+  top: 284px;
+  left: 310px;
   font-family: "Swiss 721", sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
   color: black;
 }
@@ -850,4 +851,25 @@ h5 {
 .content-right{
   float: right;
   width: 50%;
+}
+#form-card{
+  margin-bottom: 40px;
+}
+#form-card_1{
+  margin-bottom: 100px;
+}
+#form-card_2{
+  margin-bottom: 100px;
+}
+#form-card_3{
+  margin-bottom: 95px;
+}
+#form-card_4{
+  margin-bottom: 95px;
+}
+#form-card_5{
+  margin-bottom: 95px;
+}
+#form-card_6{
+  margin-bottom: 100px;
 }

@@ -47,39 +47,39 @@ const app = new Vue({
   data: {
     showLogo: true,
     logo:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_1: true,
     logo_1:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_2: true,
     logo_2:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_3: true,
     logo_3:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_4: true,
     logo_4:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_5: true,
     logo_5:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_6: true,
     logo_6:"",
-    logoSize: 120,
+    logoSize: 144,
 
     showLogo_7: true,
     logo_7:"",
-    logoSize: 120,
+    logoSize: 144,
 
     url: "",
     qrCode: undefined,
-    qrSize: 76,
+    qrSize: 86,
 
     url_1: "",
     qrCode_1: undefined,
@@ -107,7 +107,7 @@ const app = new Vue({
 
     url_7: "",
     qrCode_7: undefined,
-    qrSize: 76,
+    qrSize: 102,
 
     name: "",
     fontSize: 85,
@@ -190,42 +190,42 @@ const app = new Vue({
     font: fonts[0],
 
     job: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_1: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_2: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_3: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_4: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_5: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_6: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
     job_7: "",
-    fontSize: 85,
+    fontSize: 550,
     fonts: fonts,
     font: fonts[0],
 
