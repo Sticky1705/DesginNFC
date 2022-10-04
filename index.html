@@ -538,8 +538,8 @@
         <div class="content-right">
           <div id="form-card">
             <div id="split ">
-              <input type="text" class="textbox" size="50%" height="50"/>
-              <button>
+              <input type="text" id="textForm" class="textbox" size="50%" height="50"/>
+              <button id="btn1" v-on:click="LoadingPDF">
                 Nhap du lieu
               </button>
             </div>
@@ -557,7 +557,7 @@
 
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
-              <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
+              <input v-model="name" placeholder="Tên trên thẻ" id="txt-name"/>
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>

@@ -11,6 +11,7 @@ const toDataURL = url =>
         })
     );
 
+
 const readFile = file => {
   return new Promise((resolve, reject) => {
     const fr = new FileReader();
@@ -350,7 +351,9 @@ const app = new Vue({
     font: fonts[0],
 
     backgrounds: [],
-    background: "white"
+    background: "white",
+
+    textForm: ""
   },
   mounted: async function() {
     const qrCode = new QRCode("qr-code", {
@@ -598,6 +601,14 @@ const app = new Vue({
     },
     setBackground: function(bg) {
       this.background = bg;
+    },
+    LoadingPDF: function(){
+      const data = document.getElementById('textForm');
+      const out1 = document.getElementById('name');
+      
+      data.value.split(';');
+      out1.innerHTML = data.value;
+      console.log(out1.value);
     }
   }
 });
