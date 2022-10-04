@@ -27,6 +27,7 @@
     <br>
       <div id="app">
         <div class="content-left">
+          <img width="100%" src='https://unsplash.it/3000/3000/?random' hidden/>
           <div
             id="card"
             v-bind:style="{ 'background-image': 'url(' + background + ')' }"
@@ -536,9 +537,14 @@
         
         <div class="content-right">
           <div id="form-card">
+            <div id="split ">
+              <input type="text" class="textbox" size="50%" height="50"/>
+              <button>
+                Nhap du lieu
+              </button>
+            </div>
+
             <div>
-              <label>Bỏ vào file excel</label>
-              <input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
               <h5>1. Ảnh đại diện</h5>
               <div>
                 <label>Đổi ảnh đại diện (Ảnh PNG trong suốt, size &gt; 250px) </label>
@@ -546,40 +552,15 @@
                 <button v-on:click="showLogo = !showLogo">
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
-    
+
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
               <input v-model="name" placeholder="Tên trên thẻ" id="txt-name" />
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -588,12 +569,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -602,12 +577,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -615,12 +584,6 @@
               <div>
                 <input v-model="MSSV" placeholder="MSSV" id="txt-MSSV" hidden>
                 <input v-model="url" placeholder="MSSV" id="url"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -630,12 +593,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -644,23 +601,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -674,27 +618,8 @@
                 <button v-on:click="showLogo_1 = !showLogo_1" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
     
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
@@ -702,12 +627,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -716,12 +635,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -730,12 +643,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -743,12 +650,6 @@
               <div>
                 <input v-model="MSSV_1" placeholder="MSSV" id="txt-MSSV_1" hidden>
                 <input v-model="url_1" placeholder="MSSV" id="url_1"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -758,12 +659,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -772,22 +667,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -800,40 +683,15 @@
                 <button v-on:click="showLogo_2 = !showLogo_2" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
-    
+
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
               <input v-model="name_2" placeholder="Tên trên thẻ" id="txt-name_2" />
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -842,12 +700,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -856,12 +708,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -869,12 +715,6 @@
               <div>
                 <input v-model="MSSV_2" placeholder="MSSV" id="txt-MSSV_2" hidden>
                 <input v-model="url_2" placeholder="MSSV" id="url_2"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -884,12 +724,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -898,22 +732,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -926,40 +748,15 @@
                 <button v-on:click="showLogo_3 = !showLogo_3" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
-    
+
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
               <input v-model="name_3" placeholder="Tên trên thẻ" id="txt-name_3" />
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -968,12 +765,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -982,12 +773,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -995,27 +780,15 @@
               <div>
                 <input v-model="MSSV_3" placeholder="MSSV" id="txt-MSSV_3" hidden>
                 <input v-model="url_3" placeholder="MSSV" id="url_3"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
             <div>
               <h5>6. Lớp</h5>
               <input v-model="Classroom_3" placeholder="Lớp" id="txt-Classroom_3" />
-              <select v-model="font" hidden>
+              <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1024,22 +797,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -1052,27 +813,8 @@
                 <button v-on:click="showLogo_4 = !showLogo_4" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
     
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
@@ -1080,12 +822,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1094,12 +830,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1108,12 +838,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1121,12 +845,6 @@
               <div>
                 <input v-model="MSSV_4" placeholder="MSSV" id="txt-MSSV_4" hidden>
                 <input v-model="url_4" placeholder="MSSV" id="url_4"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -1136,12 +854,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1150,22 +862,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -1178,27 +878,8 @@
                 <button v-on:click="showLogo_5 = !showLogo_5" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
     
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
@@ -1206,12 +887,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1220,12 +895,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1234,12 +903,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1247,12 +910,6 @@
               <div>
                 <input v-model="MSSV_5" placeholder="MSSV" id="txt-MSSV_5" hidden>
                 <input v-model="url_5" placeholder="MSSV" id="url_5"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -1262,12 +919,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1276,22 +927,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -1304,27 +943,8 @@
                 <button v-on:click="showLogo_6 = !showLogo_6" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
     
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
@@ -1332,12 +952,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1346,12 +960,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1360,12 +968,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1373,12 +975,6 @@
               <div>
                 <input v-model="MSSV_6" placeholder="MSSV" id="txt-MSSV_6" hidden>
                 <input v-model="url_6" placeholder="MSSV" id="url_6"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -1388,12 +984,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1402,22 +992,10 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
               <h5>------------------------------------------------------------------------------------------------------------</h5>
-              <button v-on:click="exportCard" hidden>
-                Tạo thẻ (Ảnh)
-              </button>
-              <button v-on:click="exportPDF" hidden>
-                Tạo thẻ (PDF)
-              </button>
             </div>
           </div>
 
@@ -1430,40 +1008,15 @@
                 <button v-on:click="showLogo_7 = !showLogo_7" >
                   Ẩn/Hiện anh dai dien
                 </button>
-                <button v-on:click="logoSize -= 10" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="logoSize += 10" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
-    
-            <!-- <div>
-              <h5>2. Ảnh nền</h5>
-              <div id="background-select">
-                <img
-                  v-bind:src="bg"
-                  v-for="bg in backgrounds"
-                  v-on:click="setBackground(bg)"
-                />
-              </div>
-              <label>Đổi ảnh nền (Ảnh tỷ lệ 11:7, size &gt; 1100px X 700px) </label>
-              <input type="file" @change="changeCustomBg" accept="image/*" />
-            </div> -->
-    
+
             <div>
               <h5>2. Thông tin thẻ (Tên dài quá có thể thu nhỏ chữ)</h5>
               <input v-model="name_7" placeholder="Tên trên thẻ" id="txt-name_7" />
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1472,12 +1025,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1486,12 +1033,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1499,12 +1040,6 @@
               <div>
                 <input v-model="MSSV_7" placeholder="MSSV" id="txt-MSSV_7" hidden>
                 <input v-model="url_7" placeholder="MSSV" id="url_7"/>
-                <button v-on:click="updateQR(-10)" hidden>
-                  - Thu nhỏ
-                </button>
-                <button v-on:click="updateQR(10)" hidden>
-                  + Phóng to
-                </button>
               </div>
             </div>
     
@@ -1514,12 +1049,6 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
     
             <div>
@@ -1528,20 +1057,14 @@
               <select v-model="font">
                 <option v-for="fnt in fonts" :value="fnt">Font: {{fnt}}</option>
               </select>
-              <button v-on:click="fontSize -= 2" hidden>
-                - Thu nhỏ
-              </button>
-              <button v-on:click="fontSize += 2" hidden>
-                + Phóng to
-              </button>
             </div>
-    
+
             <div>
               <h5>8. Xuất file</h5>
-              <button v-on:click="exportCard" hidden>
+              <button class="btn btn-success btn-ladda" data-style="zoom-in" v-on:click="exportCard" hidden>
                 Tạo thẻ (Ảnh)
               </button>
-              <button v-on:click="exportPDF">
+              <button class="btn btn-success btn-ladda" data-style="zoom-in" v-on:click="exportPDF">
                 Tạo thẻ (PDF)
               </button>
             </div>
@@ -1570,6 +1093,13 @@
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
       <script src="/script.js" defer></script>
-    </br>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script>
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+          $('#status').fadeOut(); // will first fade out the loading animation 
+          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+          $('body').delay(350).css({'overflow':'visible'});
+        })
+      </script>
   </body>
 </html>

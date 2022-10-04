@@ -6,6 +6,7 @@
 
 body * {
   font-family: "Tahoma", sans-serif;
+  overflow: hidden;
 }
 
 h5 {
@@ -293,6 +294,12 @@ h5 {
   border: 1px solid white;
 }
 
+#split {
+  height:200px;
+  width: 500px;
+  font-size:14pt;
+}
+
 #name {
   position: absolute;
   margin: 0;
@@ -375,7 +382,7 @@ h5 {
   margin: 0;
   top: 125px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -386,7 +393,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -397,7 +404,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -408,7 +415,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -419,7 +426,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -430,7 +437,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -441,7 +448,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -452,7 +459,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -463,7 +470,7 @@ h5 {
   margin: 0;
   top: 154px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -474,7 +481,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -485,7 +492,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -496,7 +503,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -507,7 +514,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -518,7 +525,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -529,7 +536,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -540,7 +547,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -551,7 +558,7 @@ h5 {
   margin: 0;
   top: 189px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -562,7 +569,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -573,7 +580,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -584,7 +591,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -595,7 +602,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -606,7 +613,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -617,7 +624,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -628,7 +635,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -639,7 +646,7 @@ h5 {
   margin: 0;
   top: 221px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -650,7 +657,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -661,7 +668,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -672,7 +679,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -683,7 +690,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -694,7 +701,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -705,7 +712,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -716,7 +723,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -727,7 +734,7 @@ h5 {
   margin: 0;
   top: 252px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -738,7 +745,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -749,7 +756,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -760,7 +767,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -771,7 +778,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -782,7 +789,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -793,7 +800,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -804,7 +811,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;
@@ -815,7 +822,7 @@ h5 {
   margin: 0;
   top: 284px;
   left: 310px;
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: black;

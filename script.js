@@ -31,9 +31,9 @@ const getBackgrounds = () => {
 };
 
 const fonts = [
-  "Swiss 721",
-  "Kanit",
   "Oswald",
+  "Kanit",
+  "Swiss 721",
   "Prompt",
   "Roboto",
   "Roboto Slab",
@@ -360,10 +360,6 @@ const app = new Vue({
     });
     this.qrCode = qrCode;
 
-    const backgrounds = await getBackgrounds();
-    this.backgrounds = backgrounds;
-    this.background = backgrounds[0];
-
     const qrCode_1 = new QRCode("qr-code_1", {
       text: this.url_1,
       width: this.qrSize,
@@ -412,6 +408,10 @@ const app = new Vue({
       height: this.qrSize
     });
     this.qrCode_7 = qrCode_7;
+
+    const backgrounds = await getBackgrounds();
+    this.backgrounds = backgrounds;
+    this.background = backgrounds[0];
 
   },
   watch: {
@@ -518,6 +518,10 @@ const app = new Vue({
     },
     exportPDF: async () => {
       const { jsPDF } = window.jspdf;
+
+      setTimeout(function() {
+        $('#buttonload').button('reset');
+   }, 1000);
 
       await domtoimage.toPng(document.querySelector("#card")); // Lol font only work in 2nd times
       const dataUrl = await domtoimage.toPng(document.querySelector("#card"));
