@@ -613,8 +613,43 @@ const app = new Vue({
       const job_1 = document.getElementById('job_1');
       const Classroom_1 = document.getElementById('Classroom_1');
       const SchoolYear_1 = document.getElementById('SchoolYear_1');
-      
-      
+
+      const name_2 = document.getElementById('name_2');
+      const birthday_2 = document.getElementById('birthday_2');
+      const job_2 = document.getElementById('job_2');
+      const Classroom_2 = document.getElementById('Classroom_2');
+      const SchoolYear_2 = document.getElementById('SchoolYear_2');
+
+      const name_3 = document.getElementById('name_3');
+      const birthday_3 = document.getElementById('birthday_3');
+      const job_3 = document.getElementById('job_3');
+      const Classroom_3 = document.getElementById('Classroom_3');
+      const SchoolYear_3 = document.getElementById('SchoolYear_3');
+
+      const name_4 = document.getElementById('name_4');
+      const birthday_4 = document.getElementById('birthday_4');
+      const job_4 = document.getElementById('job_4');
+      const Classroom_4 = document.getElementById('Classroom_4');
+      const SchoolYear_4 = document.getElementById('SchoolYear_4');
+
+      const name_5 = document.getElementById('name_5');
+      const birthday_5 = document.getElementById('birthday_5');
+      const job_5 = document.getElementById('job_5');
+      const Classroom_5 = document.getElementById('Classroom_5');
+      const SchoolYear_5 = document.getElementById('SchoolYear_5');
+
+      const name_6 = document.getElementById('name_6');
+      const birthday_6 = document.getElementById('birthday_6');
+      const job_6 = document.getElementById('job_6');
+      const Classroom_6 = document.getElementById('Classroom_6');
+      const SchoolYear_6 = document.getElementById('SchoolYear_6');
+
+      const name_7 = document.getElementById('name_7');
+      const birthday_7 = document.getElementById('birthday_7');
+      const job_7 = document.getElementById('job_7');
+      const Classroom_7 = document.getElementById('Classroom_7');
+      const SchoolYear_7 = document.getElementById('SchoolYear_7');
+
       const dataSplit = data.value.split(/[;,]/);
 
       name.innerHTML = dataSplit[0];
@@ -628,6 +663,42 @@ const app = new Vue({
       job_1.innerHTML = dataSplit[7];
       Classroom_1.innerHTML = dataSplit[8];
       SchoolYear_1.innerHTML = dataSplit[9];
+
+      name_2.innerHTML = dataSplit[10];
+      birthday_2.innerHTML = dataSplit[11];
+      job_2.innerHTML = dataSplit[12];
+      Classroom_2.innerHTML = dataSplit[13];
+      SchoolYear_2.innerHTML = dataSplit[14];
+
+      name_3.innerHTML = dataSplit[15];
+      birthday_3.innerHTML = dataSplit[16];
+      job_3.innerHTML = dataSplit[17];
+      Classroom_3.innerHTML = dataSplit[18];
+      SchoolYear_3.innerHTML = dataSplit[19];
+
+      name_4.innerHTML = dataSplit[20];
+      birthday_4.innerHTML = dataSplit[21];
+      job_4.innerHTML = dataSplit[22];
+      Classroom_4.innerHTML = dataSplit[23];
+      SchoolYear_4.innerHTML = dataSplit[24];
+
+      name_5.innerHTML = dataSplit[25];
+      birthday_5.innerHTML = dataSplit[26];
+      job_5.innerHTML = dataSplit[27];
+      Classroom_5.innerHTML = dataSplit[28];
+      SchoolYear_5.innerHTML = dataSplit[29];
+
+      name_6.innerHTML = dataSplit[30];
+      birthday_6.innerHTML = dataSplit[31];
+      job_6.innerHTML = dataSplit[32];
+      Classroom_6.innerHTML = dataSplit[33];
+      SchoolYear_6.innerHTML = dataSplit[34];
+
+      name_7.innerHTML = dataSplit[35];
+      birthday_7.innerHTML = dataSplit[36];
+      job_7.innerHTML = dataSplit[37];
+      Classroom_7.innerHTML = dataSplit[38];
+      SchoolYear_7.innerHTML = dataSplit[39];
     }
   }
 });
