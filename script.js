@@ -521,10 +521,7 @@ const app = new Vue({
     },
     exportPDF: async () => {
       const { jsPDF } = window.jspdf;
-
-      setTimeout(function() {
-        $('#buttonload').button('reset');
-   }, 1000);
+      $('#img').show();
 
       await domtoimage.toPng(document.querySelector("#card")); // Lol font only work in 2nd times
       const dataUrl = await domtoimage.toPng(document.querySelector("#card"));
@@ -550,6 +547,7 @@ const app = new Vue({
       await domtoimage.toPng(document.querySelector("#card_7"));
       const dataUrl_7 = await domtoimage.toPng(document.querySelector("#card_7"));
 
+      
       const img = new Image();
       img.src = dataUrl;
 
@@ -596,8 +594,8 @@ const app = new Vue({
       
       doc.setFontSize(16);
       doc.setFont("courier", "bold");
-
       doc.save("thesinhvien.pdf");
+      $('#img').hide();
     },
     setBackground: function(bg) {
       this.background = bg;
@@ -607,20 +605,29 @@ const app = new Vue({
       const name = document.getElementById('name');
       const birthday = document.getElementById('birthday');
       const job = document.getElementById('job');
-      const MSSV = document.getElementById('MSSV');
-      const qr_code = document.getElementById('qr-code');
       const Classroom = document.getElementById('Classroom');
       const SchoolYear = document.getElementById('SchoolYear');
-      const dataSplit = data.value.split(';', 6);
+      //the 2
+      const name_1 = document.getElementById('name_1');
+      const birthday_1 = document.getElementById('birthday_1');
+      const job_1 = document.getElementById('job_1');
+      const Classroom_1 = document.getElementById('Classroom_1');
+      const SchoolYear_1 = document.getElementById('SchoolYear_1');
+      
+      
+      const dataSplit = data.value.split(/[;,]/);
 
       name.innerHTML = dataSplit[0];
       birthday.innerHTML = dataSplit[1];
       job.innerHTML = dataSplit[2];
-      MSSV.innerHTML = dataSplit[3];
-      qr_code.innerHTML = dataSplit[3];
-      Classroom.innerHTML = dataSplit[4];
-      SchoolYear.innerHTML = dataSplit[5];
-      console.log(out1.innerHTML);
+      Classroom.innerHTML = dataSplit[3];
+      SchoolYear.innerHTML = dataSplit[4];
+
+      name_1.innerHTML = dataSplit[5];
+      birthday_1.innerHTML = dataSplit[6];
+      job_1.innerHTML = dataSplit[7];
+      Classroom_1.innerHTML = dataSplit[8];
+      SchoolYear_1.innerHTML = dataSplit[9];
     }
   }
 });

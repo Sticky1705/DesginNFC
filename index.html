@@ -1067,12 +1067,17 @@
               <button class="btn btn-success btn-ladda" data-style="zoom-in" v-on:click="exportPDF">
                 Tạo thẻ (PDF)
               </button>
+              <img src="./Image/Spinner-1s-200px.gif" id="img" style="display:none"/>
             </div>
+            
           </div>
-
         </div>
         
       </div>     
+      
+      <script>
+        jQuery(".loader_div").show();
+      </script>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
         integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ=="
@@ -1094,12 +1099,5 @@
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
       <script src="/script.js" defer></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script>
-        $(window).on('load', function() { // makes sure the whole site is loaded 
-          $('#status').fadeOut(); // will first fade out the loading animation 
-          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-          $('body').delay(350).css({'overflow':'visible'});
-        })
-      </script>
   </body>
 </html>
