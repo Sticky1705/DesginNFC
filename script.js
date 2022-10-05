@@ -604,11 +604,23 @@ const app = new Vue({
     },
     LoadingPDF: function(){
       const data = document.getElementById('textForm');
-      const out1 = document.getElementById('name');
-      
-      data.value.split(';');
-      out1.innerHTML = data.value;
-      console.log(out1.value);
+      const name = document.getElementById('name');
+      const birthday = document.getElementById('birthday');
+      const job = document.getElementById('job');
+      const MSSV = document.getElementById('MSSV');
+      const qr_code = document.getElementById('qr-code');
+      const Classroom = document.getElementById('Classroom');
+      const SchoolYear = document.getElementById('SchoolYear');
+      const dataSplit = data.value.split(';', 6);
+
+      name.innerHTML = dataSplit[0];
+      birthday.innerHTML = dataSplit[1];
+      job.innerHTML = dataSplit[2];
+      MSSV.innerHTML = dataSplit[3];
+      qr_code.innerHTML = dataSplit[3];
+      Classroom.innerHTML = dataSplit[4];
+      SchoolYear.innerHTML = dataSplit[5];
+      console.log(out1.innerHTML);
     }
   }
 });
